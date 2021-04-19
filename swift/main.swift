@@ -15,7 +15,7 @@ jsContext?.exceptionHandler = { context, exception in
     }
 }
 // read the javascript files in and evaluate
-if let jsSourcePath = Bundle.main.path(forResource: "./../output.js", ofType: "js") {
+if let jsSourcePath = Bundle.main.path(forResource: "./../crypto-min.js", ofType: "js") {
     do {
         let jsSourceContents = try String(contentsOfFile: jsSourcePath)
         jsContext?.evaluateScript(jsSourceContents)
